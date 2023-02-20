@@ -119,14 +119,12 @@
                                         </div>
                                     @endif
                                     <div class="form-group form-primary">
-                                        <input type="text" name="email" class="form-control">
-                                        <span class="form-bar"></span>
-                                        <label class="float-label">Your Email Address</label>
+                                        <input type="text" name="email" placeholder="Email Address" class="form-control">
+                                       
                                     </div>
                                     <div class="form-group form-primary">
-                                        <input type="password" name="password" class="form-control">
-                                        <span class="form-bar"></span>
-                                        <label class="float-label">Password</label>
+                                        <input type="password" name="password" placeholder="Password" class="form-control">
+                                        
                                     </div>
                                     
                                     <div class="row m-t-30">

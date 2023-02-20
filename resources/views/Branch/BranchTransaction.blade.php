@@ -6,7 +6,23 @@
     }
     @media only screen and (max-width: 600px) {
     .row1 {
-        width:24%;
+        width:65%;
+        margin-bottom:20px;
+    }
+    .row2 {
+        width:35%;
+    }
+
+    .row3 {
+        width:60%;
+        margin-top:20px;
+    }
+    .row4 {
+        width:40%;
+        margin-top:20px;
+    }
+    .inner{
+        margin-top:-10px;
     }
     .balance{
         font-size:18px;
@@ -82,17 +98,17 @@
                                                        <div class="col-lg-2 row1">
                                                            <h6>{{$day}}/{{$month}}/{{$year}}</h6> 
                                                         </div>
-                                                        <div class="col-lg-2 row1">
+                                                        <div class="col-lg-2 row2">
                                                             <button style="font-weight:bold;color:white;background-color:red;border:1px solid red;padding:6px;;margin-bottom:5px">{{$payment->type}}</button>
                                                         </div>
-                                                        <div class="col-lg-4 row1">
+                                                        <div class="col-lg-4 row3">
                                                             <h6>{{$payment->description}}</h6>
                                                         </div>
-                                                        <div class="col-lg-4 row1">
+                                                        <div class="col-lg-4 row4">
                                                             <div class="col-lg-4">
                                                                 <p>-{{number_format($payment->amount)}}</p>
                                                             </div>
-                                                            <div class="col-lg-4">
+                                                            <div class="col-lg-4 inner">
                                                                 <p>Bal: {{number_format($payment->remaining_balance)}}</p>
                                                             </div>
 
@@ -107,17 +123,17 @@
                                                      <div class="col-lg-2 row1">
                                                            <h6>{{$day}}/{{$month}}/{{$year}}</h6> 
                                                         </div>
-                                                        <div class="col-lg-2 row1">
+                                                        <div class="col-lg-2 row2">
                                                             <button style="font-weight:bold;color:white;background-color:green;border:1px solid green;padding:6px;margin-bottom:5px">{{$payment->type}}</button>
                                                         </div>
-                                                        <div class="col-lg-4 row1">
+                                                        <div class="col-lg-4 row3">
                                                             <h6>{{$payment->description}}</h6>
                                                         </div>
-                                                        <div class="col-lg-4 row1">
+                                                        <div class="col-lg-4 row4">
                                                             <div class="col-lg-4">
                                                                 <p>+{{number_format($payment->amount)}}</p>
                                                             </div>
-                                                            <div class="col-lg-4">
+                                                            <div class="col-lg-4 inner">
                                                                 <p>Bal: {{number_format($payment->remaining_balance)}}</p>
                                                             </div>
 
@@ -132,17 +148,17 @@
                                                     <div class="col-lg-2 row1">
                                                            <h6>{{$day}}/{{$month}}/{{$year}}</h6> 
                                                         </div>
-                                                        <div class="col-lg-2 row1">
+                                                        <div class="col-lg-2 row2">
                                                             <button style="font-weight:bold;color:white;background-color:red;border:1px solid red;padding:6px;;margin-bottom:5px">{{$payment->type}}</button>
                                                         </div>
-                                                        <div class="col-lg-4 row1">
+                                                        <div class="col-lg-4 row3">
                                                         <h6>{{$payment->sender_name}} for {{$payment->receiver_name}}</h6>
                                                         </div>
-                                                        <div class="col-lg-4 row1">
+                                                        <div class="col-lg-4 row4">
                                                             <div class="col-lg-4">
                                                                 <p>-{{number_format($payment->amount)}}</p>
                                                             </div>
-                                                            <div class="col-lg-4">
+                                                            <div class="col-lg-4 inner">
                                                                 <p>Bal: {{number_format($payment->remaining_balance)}}</p>
                                                             </div>
 
@@ -158,17 +174,17 @@
                                                      <div class="col-lg-2 row1">
                                                            <h6>{{$day}}/{{$month}}/{{$year}}</h6> 
                                                         </div>
-                                                     <div class="col-lg-2 row1">
+                                                     <div class="col-lg-2 row2">
                                                             <button style="font-weight:bold;color:white;background-color:green;border:1px solid green;padding:6px;;margin-bottom:5px">Payin</button>
                                                         </div>
-                                                        <div class="col-lg-4 row1">
+                                                        <div class="col-lg-4 row3">
                                                         <h6>{{$payment->sender_name}} for {{$payment->receiver_name}}</h6>
                                                         </div>
-                                                        <div class="col-lg-4 row1">
+                                                        <div class="col-lg-4 row4">
                                                             <div class="col-lg-4">
                                                                 <p>+{{number_format($payment->amount)}}</p>
                                                             </div>
-                                                            <div class="col-lg-4">
+                                                            <div class="col-lg-4 inner">
                                                                 <p>Bal: {{number_format($payment->remaining_balance)}}</p>
                                                             </div>
 

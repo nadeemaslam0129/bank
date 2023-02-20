@@ -5,6 +5,12 @@
     .row1 {
         width:24%;
     }
+    .row2 {
+        width:24%;
+    }
+    .row3 {
+        width:24%;
+    }
     .balance{
         font-size:18px;
         
@@ -69,7 +75,7 @@
                                                     <div class="row h-6 border border-secondary m-l-5"></div>
                                                         <br/>
                                                         <div class="row">
-                                                            <div class="col-lg-3 row1">
+                                                            <div class="col-lg-3 row3">
                                                                 <h6>{{$day}}/{{$month}}/{{$year}}</h6>
                                                             </div>
                                                             <div class="col-lg-3 row1">
@@ -79,7 +85,7 @@
                                                                 <button style="font-weight:bold;color:white;background-color:red;border:1px solid red;padding:6px;;margin-bottom:5px">{{$t->status}}</button>
                                                                 @endif
                                                             </div>
-                                                            <div class="col-lg-3 row1">
+                                                            <div class="col-lg-3 row2">
                                                                 <h6>{{$t->sender_name}} for {{$t->receiver_name}}</h6>
                                                             </div>
                                                             <div class="col-lg-3 row1">

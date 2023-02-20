@@ -60,16 +60,13 @@
                                     @endif
                                         <div class="card">
                                             <div class="card-block">
-                                                <div class="row justify-content-center">
-                                                            <div class="col-1">
-                                                                <img class="img-70 img-radius" src="https://static.vecteezy.com/system/resources/previews/000/574/512/original/vector-sign-of-user-icon.jpg" alt="This is image">
-
-                                                            </div>
-                                                            <div class="col-10 mx-0 ml-3">
-                                                                <div class="col-8 mx-0">
-                                                                    <h2>{{$transfer->sending_amount}} {{$transfer->sender_currency}} </h2>
+                                                <div class="row" >
+                                                           
+                                                            <div class="col-12">
+                                                                <div class="col-12">
+                                                                    <h2>{{number_format($transfer->sending_amount)}} {{$transfer->sender_currency}} </h2>
                                                                 </div>
-                                                                <div class="col-12 mx-0">
+                                                                <div class="col-12">
                                                                     <h6>{{$transfer->sender_name}} for {{$transfer->receiver_name}}</h6>
                                                                 </div>
                                                             </div>
@@ -79,8 +76,8 @@
                                                 $month = Carbon\Carbon::parse($transfer->created_at)->month; 
                                                 $day = Carbon\Carbon::parse($transfer->created_at)->day; 
                                                 ?>
-                                                 <div class="row justify-content-center">
-                                                    <div class="col-10 mt-2">
+                                                 <div class="row">
+                                                    <div class="col-12 ml-3">
                                                         <h6>Created by {{$user_name}} by {{$transfer->created_at->diffForHumans()}} on {{$day}}/{{$month}}/{{$year}}</h6>
                                                     </div>
 
